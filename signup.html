@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+window.location.hash="no-back-button";
+window.location.hash="Again-No-back-button";//again because google chrome don't insert first hash into history
+window.onhashchange=function(){window.location.hash="no-back-button";}
+</script>
+<meta charset="ISO-8859-1">
+<title>Signup page</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="loginbox1">
+<img src="icon.png" class="icon"><br>
+<h1>USER REGISTER</h1>
+<form action="Uregs">
+<p>Name</p>
+<input type="text" name="name" id="uname" placeholder="Enter User Name" required>
+<p>Email-ID</p>
+<input type="text" name="email" id="uname" placeholder="Enter User Name" required>
+<p>Password</p>
+<input type="password" name="pwd" id="pswd" placeholder="Enter Password" required>
+
+<input type="submit" name="uname" id="uname" value="Signup">
+</form>
+<form action="ulogin.html">
+<input type="submit" name="uname" id="uname" value="Login">
+</form>
+<a href="#"><font size="3">Lost your password ?</font></a><br>
+<a href="#"><font size="3">Don't have an account ?</font></a>
+</form>
+</div>
+</body>
+</html>

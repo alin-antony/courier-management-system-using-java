@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+window.location.hash="no-back-button";
+window.location.hash="Again-No-back-button";//again because google chrome don't insert first hash into history
+window.onhashchange=function(){window.location.hash="no-back-button";}
+</script> 
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+		table
+		{
+			border-color:black;
+			border-style: solid;
+			border-width: 3px;
+			width: 30%;
+			height:200px;
+			background-color:aliceblue;
+			
+		}
+	</style>
+</head>
+<body bgcolor="#0a2f5b">
+<form action="Ulogin"><br><br><br><br>
+<table align="center" cellpadding="6">
+<tr><td><b>Email-ID</b>&nbsp; &nbsp;&nbsp;&nbsp;<input type="text" name="email" size="35" required></td></tr>
+	<tr><td><b>Password</b> &nbsp;&nbsp;&nbsp; <input type="Password" name="pwd" size="35"></td></tr><br>
+	<tr><td><center><a href="form.html"><input type="submit" value="LOGIN"></a></center></td></tr>
+</table><br><br>
+<center><img src="login.png"></center>
+</form>
+</body>

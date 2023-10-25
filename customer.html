@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--link rel="stylesheet" href="first.css"-->
+    <title>Registration Form</title>
+	<style>
+	div
+	{
+        height:680px;
+        width:993px;
+        border-color:black;
+        background-color:aliceblue;
+        margin:auto;
+        border-style:solid;
+	}
+	table
+	{
+		border-color:black;
+        text-align:left;
+        background-color:lightgrey;
+        border:3;
+	}
+	th
+	{
+     background-color: wheat;
+	}
+</style>
+<script>
+function d()
+{
+	document.f1.pri.value=document.f1.opt.value;
+	document.f1.hd.value=document.f1.opt.item(document.f1.opt.selectedIndex).text;
+	}
+</script>
+</head>
+<body bgcolor="#0a2f5b" >
+
+	<form action="index1.jsp" method="post" name="f1" >
+		<div>
+<h3><b><center><font color="blue" face="times new roman">CUSTOMER REGISTRATION FORM</font></center></b></h3>
+<center><font color="blue" face="times new roman">CREATE PICKUP REQUEST</font></center></b>
+<hr>
+<br/>
+
+<table align="center" cellpadding="6" width="80%">
+<tr><td><input type="hidden" name="p_id"></td></tr>
+<tr>
+	<td colspan="2"><b><font size="5">SENDER</font></b></td>
+	<td></td><td></td><td></td><td></td>
+	<td colspan="2"><b><font size="5">RECEIVER</font></b></td>
+</tr>	
+<tr>
+	<td>Name<font color="red">*</font></td>
+	<td><input type="text" name="s_name" id="fname" required placeholder="please enter name" autofocus></td>
+	<td></td><td></td><td></td><td></td>
+	<td>Name<font color="red">*</font></td>
+	<td><input type="text" name="r_name" id="fname" required placeholder="please enter name" autofocus></td>
+</tr>
+<tr>
+    <td>Address</td>
+    <td><textarea name="s_address" id="paddress" rows="3" cols="21"></textarea></td>
+    <td></td><td></td><td></td><td></td>
+    <td>Address</td>
+    <td><textarea name="r_address" id="paddress" rows="3" cols="21"></textarea></td>
+</tr>
+<tr>
+	<td>Pincode</td>
+	<td><input type="number" name="s_pin"></td>
+	<td></td><td></td><td></td><td></td>
+	<td>Pincode</td>
+	<td><input type="number" name="r_pin"></td>
+</tr>
+<tr>
+	<td>Mobile no.</td>
+	<td><input type="number" name="s_mobile" maxlength="10"></td>
+	<td></td><td></td><td></td><td></td>
+	<td>Mobile no.</td>
+	<td><input type="number" name="r_mobile" maxlength="10"></td>
+</tr>
+<tr>
+	<td>Email-id<font color="red">*</font></td>
+	<td><input type="email" name="s_email" required></td>
+	<td></td><td></td><td></td><td></td>
+	<td>Email-id<font color="red">*</font></td>
+	<td><input type="email" name="r_email" required></td>
+</tr>
+<tr>
+    <td>City</td>
+    <td><select name="s_city" id="city">
+    <option value="-1" selected>select..</option>
+    <option value="intapur">intapur</option>
+    <option value="faridabad">faridabad</option>
+    <option value="Goa">goa</option>
+    <option value="Patna">Patna</option>
+    <option value="nagpur">nagpur</option>
+    <option value="Mumbai">mumbai</option>
+    <option value="indore">indore</option>
+    
+    </select></td>
+    <td></td><td></td><td></td><td></td><td>City</td>
+    <td><select name="r_city" id="city">
+    <option value="-1" selected>select..</option>
+    <option value="intapur">intapur</option>
+    <option value="faridabad">faridabad</option>
+    <option value="Goa">goa</option>
+    <option value="Patna">Patna</option>
+    <option value="nagpur">nagpur</option>
+    <option value="Mumbai">mumbai</option>
+    <option value="indore">indore</option>
+    </select></td>
+</tr>
+<tr>
+	<td>State</td>
+	<td><select name="s_state">
+	<option value="-1">State</option>
+    <option value="madhya pradesh">Madhya pradesh</option>
+    <option value="uttar pradesh">uttar pradesh</option>
+	<option value="rajasthan">rajasthan</option>
+    <option value="Andhra pradesh">Andhra pradesh</option>
+	</select></td>
+	<td></td><td></td><td></td><td></td><td>State</td>
+	<td><select name="r_state">
+	<option value="-1">State</option>
+    <option value="madhya pradesh">Madhya pradesh</option>
+    <option value="uttar pradesh">uttar pradesh</option>
+	<option value="rajasthan">rajasthan</option>
+    <option value="Andhra pradesh">Andhra pradesh</option>
+	</td>
+</tr>
+<tr>
+	<td>District</td>
+	<td><select name="s_dis" id="dis">
+	<option value="-1">District</option>	
+    <option value="jhabua">Jhabua</option>
+    <option value="indore">indore</option>
+	<option value="aligarh">aligarh</option>
+    <option value="mansore">mansore</option>
+	</select></td>
+	<td></td><td></td><td></td><td></td><td>District</td>
+	<td><select name="r_dis" id="dis">
+	<option value="-1">District</option>	
+    <option value="jhabua">Jhabua</option>
+    <option value="indore">indore</option>
+	<option value="aligarh">aligarh</option>
+    <option value="mansore">mansore</option>
+	</select></td>
+</tr>
+
+<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+</table>
+<br>
+
+<table align="center" cellpadding="6" width="80%">
+<h2 align="center">Parcel_Details</h2>
+	<tr>
+	<td>Date<font color="red">*</font></td>
+	<td><input type="date" name="Date" id="date" autofocus></td>
+	<td>Time<font color="red">*</font></td>
+	<td><input type="time" name="p_time" id="time" autofocus></td>
+	<td>Items<font color="red">*</font></td>
+	<td><input type="text" name="item" autofocus></td>
+	</tr>
+	<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+	<tr>
+	<td>Distance<font color="red">*</font></td>
+	<td><select name="opt" onchange="d()" >
+	<option>select</option>
+	<option value="50">1km-5km</option>
+	<option value="100">6km-10km</option>
+	<option value="120">11km-15km</option>
+	<option value="150">16km-20km</option>
+	<option value="180">21km-25km</option>
+	<option value="220">26km-30km</option>
+	<option value="240">31km-35km</option>
+	<option value="250">36km-40km</option>
+	<option value="280">46km-50km</option>
+	</td>
+	<td>Price<font color="red">*</font></td>
+	<td><input type="text" name="pri" readonly><input type="hidden" name="hd"></td>
+	<td>Enter Quantity<font color="red">*</font></td>
+	<td><input type="text" name="qty" id="weight" autofocus></td>
+	
+	</tr>
+</table>
+<br/>
+<center><input type="submit" value="Calculate Amount"><input type="reset" name="reset" value="Reset">
+</center>
+</form>
+</body>
+</html>
+ 

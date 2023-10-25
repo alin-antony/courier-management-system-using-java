@@ -1,0 +1,23 @@
+
+		h1
+		{
+			font-family:calibri;
+			align-content:center;
+			color:white;
+			background-color:black;
+		}
+		div
+		{
+			height:150px;
+			width:800px;
+			background-color:mistyrose;
+			border-style:solid;
+			margin-left:100px ;
+
+		}
+		
+		h2
+		{
+			color:purple;
+		}
+	
